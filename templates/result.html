@@ -1,0 +1,70 @@
+
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Property Details</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">Property Details</div>
+
+   <table cellspacing="0">
+      <tr>
+         <th>PostedDate</th>
+         <th>PropertyName</th>
+         <th>CategoryType</th>
+         <th>PropertyType</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Furnishing</th>
+          <th>BuiltUpSize</th>
+          <th>RentalDeposit</th>
+          <th>NoOfBedroom</th>
+          <th>NoOfBathroom</th>
+          <th>AgeofProperty</th>
+          <th>NoOfParking</th>
+          <th>RentalPerMth</th>
+          <th>Facilities</th>
+         <th>OtherFacilities</th>
+          <th>SourceUrl</th>
+
+      </tr>
+         {% for review in reviews %}
+      <tr>
+          <td>{{review['PostedDate']}} </td>
+          <td>{{review['PropertyName']}} </td>
+          <td>{{review['CategoryType']}} </td>
+          <td>{{review['PropertyType']}} </td>
+          <td>{{review['City']}} </td>
+          <td>{{review['State']}} </td>
+           <td>{{review['Furnishing']}} </td>
+          <td>{{review['BuiltUpSize']}} </td>
+          <td>{{review['RentalDeposit']}} </td>
+          <td>{{review['NoOfBedroom']}} </td>
+          <td>{{review['NoOfBathroom']}} </td>
+          <td>{{review['AgeofProperty']}} </td>
+          <td>{{review['NoOfParking']}}</td>
+         <td>{{review['RentalPerMth']}}</td>
+         <td>{{review['Facilities']}}</td>
+         <td>{{review['OtherFacilities']}}</td>
+         <td>{{review['SourceUrl']}} </td>
+       {% endfor %}
+   </table>
+</div>
+
+
+
+</body>
+
+</html>
