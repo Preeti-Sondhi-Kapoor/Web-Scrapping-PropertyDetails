@@ -1,3 +1,6 @@
+Objective
+As I want to rent a house in Kuala-lumpur. So thought to do web scraping to get all details and compare the best option for me.
+
 Web Scraping Project
 This repo contains my web scraping project to extract property data for a rent from a website.
 For beginners, web scraping is a term used to describe the use of a program or algorithm to extract and process large amounts of data from
